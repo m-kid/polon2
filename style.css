@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&amp;subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Merienda:400,700&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Cabin+Sketch:700|Gravitas+One|Vast+Shadow');
-
+@import url('https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Righteous');
 
 * {
 	box-sizing: border-box;	
@@ -55,15 +53,16 @@ body {
 
 .main-title {
 	position: absolute;
-	bottom: 25vh;
+	top: 40vh;
 	right: 0vw;
 	padding-right: 2vw;
 	width: calc(100vw - 17px);
-	text-align: right;
+	text-align: center;
 	z-index: 2;
 	color: lightgray;
 	text-shadow: 3px 3px 2px rgba(87, 96, 111,1.0);
-	font-family: 'Raleway';
+	font-family: 'Lobster';
+	letter-spacing: 3px;
 	font-size: 15vh; 
 }
 
@@ -130,7 +129,7 @@ body {
 	justify-content: flex-end;
 	-webkit-justify-content: flex-end;
 	align-content: center;
-	background: linear-gradient(rgba(255, 255, 255,0.4) 10%,rgba(255, 255, 255,0.75) 40%, rgba(255, 255, 255,1.0) 90%);
+	background: linear-gradient(rgba(255, 255, 255,0.6) 10%,rgba(255, 255, 255,0.85) 40%, rgba(255, 255, 255,1.0) 90%);
 }
 
 .arrow-down {
@@ -150,7 +149,6 @@ body {
 	display: -webkit-flex;
 	align-items: center;
 	justify-content: center;
-	transition-duration: 0.5s;
 	margin-left: 2vw;
 	margin-right: 2vw;
 }
@@ -180,8 +178,6 @@ body {
 	border-bottom: 2px solid rgba(164, 176, 190,0.8);
 	background-color: none;
 	box-sizing: content-box;
-	transition-duration: 0s;	
-	/*rgba(13,61,107, 0.6);*/
 }
 
 .intro-kafel {
@@ -2482,6 +2478,9 @@ display: none;
 	font-size: 40px;
 	padding-top: 20px;
 	padding-bottom: 15px;
+	font-family: "Poiret One";
+	letter-spacing: 2px;
+	color: rgba(164, 176, 190,1.0);
 }
 
 .welcome p {
