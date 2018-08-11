@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&amp;subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Righteous');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin-ext');
 
 * {
 	box-sizing: border-box;	
@@ -53,15 +54,15 @@ body {
 
 .main-title {
 	position: absolute;
-	top: 40vh;
+	top: 50vh;
 	right: 0vw;
 	padding-right: 2vw;
 	width: calc(100vw - 17px);
 	text-align: center;
 	z-index: 2;
-	color: lightgray;
-	text-shadow: 3px 3px 2px rgba(87, 96, 111,1.0);
-	font-family: 'Lobster';
+	color: rgba(245, 246, 250,1.0);
+	text-shadow: 4px 4px 3px rgba(53, 59, 72,1.0);
+	font-family: 'Lora';
 	letter-spacing: 3px;
 	font-size: 15vh; 
 }
@@ -129,7 +130,7 @@ body {
 	justify-content: flex-end;
 	-webkit-justify-content: flex-end;
 	align-content: center;
-	background: linear-gradient(rgba(255, 255, 255,0.6) 10%,rgba(255, 255, 255,0.85) 40%, rgba(255, 255, 255,1.0) 90%);
+	-webkit-align-content: center;
 }
 
 .arrow-down {
@@ -139,9 +140,10 @@ body {
 	width: 30px;
 	height: 30px;
 	transform: rotate(45deg);
-	border-bottom: 3px solid rgba(87, 96, 111,1.0);
-	border-right: 3px solid rgba(87, 96, 111,1.0);
-	cursor: pointer;
+	border-bottom: 3px solid rgba(245, 246, 250,1.0);
+	border-right: 3px solid rgba(245, 246, 250,1.0);
+	box-shadow: 1.5px 1.5px 1px rgba(53, 59, 72,1.0);
+
 }
  
 .kafel-link-neutral {
@@ -158,7 +160,7 @@ body {
 	width: 15vh;
 	border-radius: 50%;
 	margin-top: 1vh;
-
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .kafel-link1:hover {
@@ -210,19 +212,21 @@ body {
 	text-align: center;
 	font-family: "Raleway";
 	color: black !important;
-	font-weight: 500;
+	font-weight: 600;
 	margin-top: 0.5vh;
 	letter-spacing: 0.5px;
-	font-size: 1.8vh;
+	font-size: 2vh;
 	margin-bottom: 0px;
 }
 
 .two-liner p {
 	line-height: 2vh;
 	margin-bottom: 0vh;
-	font-size: 1.8vh;
+	font-size: 2vh;
 	margin-bottom: 0px;
-	margin-top:0px;
+	margin-top: 0px;
+	letter-spacing: 0.1px;
+	font-weight: 600;
 }
 
 .intro-kafel2 img, intro-kafel2 p, intro-kafel2 two-liner p {
@@ -519,11 +523,6 @@ a:hover, a:visited, a:link, a:active
 	margin-top: 6vh;
 }
 
-.section-one {
-
-	paddisng-top: 6vh;
-
-}
 
 .video {
 	margin-bottom: 5vh;
@@ -2428,7 +2427,7 @@ display: none;
     }
 
 .tlo-1 {
-	background-image: url(img/prusziel.jpg);
+	background-image: url(img/unilar1.jpg);
 }
 
 .tlo-2 {
@@ -2446,18 +2445,109 @@ display: none;
 	top: 0vh;
 	left: 0vh;
 	width: 100vw;
-	height: 70vh;
-	background-color: white;
-	opacity: 0.85;
+	min-height: 92vh;
+	background-color: rgba(236, 240, 241,0.9);
 	z-index: 5;
 	margin-top: -70vh;
-	margin-bottom: 30vh;
+	margin-bottom: 50vh;
 }
 
-/*.pustka {
-	height: 30vh;
-}*/
+.konferencja {
+	padding-top: 10vh;
+	padding-right: 15vw;
+	padding-left: 15vw;
+}
 
+.plan, .panels, .extra-events {
+	position: absolute;
+	width: 22vw;
+	height: 10vh;
+	background-color: rgba(230, 126, 34,1.0);
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+
+.konf-plan-menu {
+	display: none;
+	position: absolute;
+	justify-content: space-between;
+	top: 25vh;	
+	width: 70vw;
+}
+
+.plan-item {
+	background: rgba(243, 156, 18,1.0);
+	width: 22vw;
+	height: 10vh;
+}
+
+.plan, {
+	top: 10vh;
+	left: 15vw;
+}
+
+.plan, .panels, .extra-events, .plan-item {
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.plan-day1, .plan-day2 {
+	display: none;
+	position: absolute;
+	top: 15vh;
+	left: 0px;
+	margin-left: -15vw;
+	width: 100vw;
+	padding-left: 15vw;
+	background-color: white;
+}
+
+
+.panels, plan-item-2 {
+	top: 10vh;
+	left: 39vw;
+}
+
+.extra-events, plan-item-3 {
+	top: 10vh;
+	left: 63vw;
+}
+
+.full-plan {
+	display: none;
+	margin-top: 15vh;
+	margin-left: -10vw;
+	width: 90vw;
+}
+
+.plan-day1 table, plan-day2 table {
+	border-spacing: 5px 15px;
+}
+
+.plan-day1 table td, .plan-day2 table td {
+	vertical-align: top;
+	font-size: 14px;
+}
+
+.single-event {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+}
+
+.plan-left {
+	width: 45vw;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+}
+
+.hour {
+	width: 8vw;
+	margin-right: 10px;
+}
 
 .konferencja h3 {
     text-align: center;
