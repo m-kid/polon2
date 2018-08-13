@@ -111,7 +111,7 @@ $("#cookies-x").click(function() {
 
 //slider
 $(".plan").click(function(){
-       $(".konf-plan-menu").slideToggle("slow"),
+       $(".konf-plan-menu").slideToggle("fast"),
        $(".konf-plan-menu").css({
             'display': 'flex',
             'dispplay': 'webkit-flex',
@@ -119,11 +119,24 @@ $(".plan").click(function(){
         $("html, body").animate({
         scrollTop: $(".konferencja").offset().top
         }, 1000);
+        $(".plan-day1").css({
+            'display':'none',
+        });
 });
 
 $(".plan-item-1").click(function(){
-       $(".plan-day1").slideToggle("slow"),
-       $(".plan-day1").siblings.css({
+        $("html, body").animate({
+        scrollTop: $(".plan").offset().top
+        }, 500);
+       $(".plan-day1").slideToggle("fast"),
+       $(".plan-day1").css({
            'display':'block',       
         });
+        $(".konferencja").css({
+            'height': '120vh',
+        });
+        $(".plan-item-1").css({
+            'background-color': 'rgba(230, 126, 34,1.0)',
+        });
+
        });

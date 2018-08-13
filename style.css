@@ -47,6 +47,15 @@ body {
 	font-weight: bold;
 }
 
+.intro-container-bis {
+	position: absolute;
+	top: 0vh;
+	left: 0vw;
+	height: 50vh;
+	width: 100vw;
+	background-color: rgba(127, 140, 141,0.2);
+}
+
 .intro-container video {
 	width: 100vw;
 	z-index: 1;
@@ -2427,7 +2436,7 @@ display: none;
     }
 
 .tlo-1 {
-	background-image: url(img/unilar1.jpg);
+	background-image: url(img/unilar2.jpg);
 }
 
 .tlo-2 {
@@ -2453,7 +2462,7 @@ display: none;
 }
 
 .konferencja {
-	padding-top: 10vh;
+	padding-top: 5vh;
 	padding-right: 15vw;
 	padding-left: 15vw;
 }
@@ -2481,7 +2490,7 @@ display: none;
 	height: 10vh;
 }
 
-.plan, {
+.plan {
 	top: 10vh;
 	left: 15vw;
 }
@@ -2496,14 +2505,17 @@ display: none;
 .plan-day1, .plan-day2 {
 	display: none;
 	position: absolute;
-	top: 15vh;
-	left: 0px;
-	margin-left: -15vw;
-	width: 100vw;
-	padding-left: 15vw;
+	top: 12.5vh;
+	left: -10vw;
+	width: 90vw;
 	background-color: white;
+	padding-bottom: 10vh;
 }
 
+.nobold {
+	font-weight: normal;
+	font-size: 14px;
+}
 
 .panels, plan-item-2 {
 	top: 10vh;
@@ -2523,12 +2535,26 @@ display: none;
 }
 
 .plan-day1 table, plan-day2 table {
-	border-spacing: 5px 15px;
+	border-collapse: collapse;
+	width: 80vw;
+	margin-left: 5vw;
 }
 
 .plan-day1 table td, .plan-day2 table td {
 	vertical-align: top;
 	font-size: 14px;
+	line-height: 14px;
+	border: 2px solid grey;
+	padding: 10px 10px;
+	font-weight: bold;
+}
+
+.venue {
+	font-size: 12px;
+	font-weight: bold;
+	color: rgba(230, 126, 34,1.0);
+line-height: 12px;
+
 }
 
 .single-event {
@@ -2545,12 +2571,16 @@ display: none;
 }
 
 .hour {
-	width: 8vw;
-	margin-right: 10px;
+	font-weight: bold;
+}
+
+.table-heading {
+	background-color: lightgrey;
+	font-weight: bold;
 }
 
 .konferencja h3 {
-    text-align: center;
+    text-align: left;
 }
 
 .welcome {
