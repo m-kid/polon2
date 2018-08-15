@@ -116,10 +116,10 @@ $(".plan").click(function(){
             'display': 'flex',
             'dispplay': 'webkit-flex',
        });
-        $("html, body").animate({
-        scrollTop: $(".konferencja").offset().top
-        }, 1000);
         $(".plan-day1").css({
+            'display':'none',
+        });
+        $(".plan-day2").css({
             'display':'none',
         });
 });
@@ -127,16 +127,49 @@ $(".plan").click(function(){
 $(".plan-item-1").click(function(){
         $("html, body").animate({
         scrollTop: $(".plan").offset().top
-        }, 500);
-       $(".plan-day1").slideToggle("fast"),
+        }, 1000);
+       $(".plan-day1").slideToggle("slow"),
        $(".plan-day1").css({
            'display':'block',       
         });
         $(".konferencja").css({
             'height': '120vh',
         });
-        $(".plan-item-1").css({
-            'background-color': 'rgba(230, 126, 34,1.0)',
+        $(".plan-day2").css({
+            'display':'none',
         });
+       });
 
+       $(".plan-item-2").click(function(){
+        $("html, body").animate({
+        scrollTop: $(".plan").offset().top
+        }, 1000);
+       $(".plan-day2").slideToggle("slow"),
+       $(".plan-day2").css({
+           'display':'block',       
+        });
+        $(".konferencja").css({
+            'height': '120vh',
+        });
+        $(".plan-day1").css({
+            'display':'none',
+        });
+       });
+
+       $(".arrow-down").click(function(){
+        $("html, body").animate({
+        scrollTop: $(".welcome").offset().top
+        }, 1000);
+       });
+        
+        $("#about").click(function(){
+        $("html, body").animate({
+        scrollTop: $(".welcome").offset().top
+        }, 1000);
+       });
+
+        $("#panelplan").click(function(){
+        $("html, body").animate({
+        scrollTop: $(".konferencja").offset().top
+        }, 2000);
        });

@@ -59,21 +59,21 @@
 	    </div>
 		<div class="intro-nav">
 
-			<a href="#About" class="kafel-link-neutral kafel-link1">				
+			<a id="about" class="kafel-link-neutral kafel-link1">				
 				<div class="intro-kafel">
 					<img src="img\icon-conf.png">
 					<p>o konferencji</p>	
 				</div>
 			</a>
 
-			<a href="#About" class="kafel-link-neutral kafel-link1">
+			<a id="panelplan" class="kafel-link-neutral kafel-link1">
 				<div class="intro-kafel">
 					<img src="img\icon-calendar.png">
 					<p>plan paneli</p>
 				</div>			
 			</a>
 
-			<a href="#About" class="kafel-link-neutral kafel-link1">	
+			<a id="extra-events" class="kafel-link-neutral kafel-link1">	
 				<div class="intro-kafel two-liner">
 					<img src="img\icon-concert.png">
 					<p>imprezy<br>towarzyszące</p>
@@ -101,7 +101,7 @@
 
 <div class="main-container">
 
-	<div class="welcome">
+	<div class="welcome" id="welcome">
 		<h1>Tradycja – Teraźniejszość – Przyszłość</h1>
 		<p>A man, Mark Standfuss, celebrates his love for his "russet-haired" fiancé, Klara. While at work one day, Klara's mother informs Mark's mother that Klara's ex-boyfriend, Adolf, has come back into town and that Klara has again fallen in love with him and no longer wants to see Mark. Mark, leaving work and deciding to go straight to Klara's (after a brief visit to a pub), happily reflects on a sunset's beautiful transformation of the city in which he lives. He ends up being hit by a tram, which Nabokov plays off as a near-miss. Hallucinatory events that follow reveal that Mark is, in fact, bandaged in a hospital room, about to die. His last thought is "Why isn't Klara here?", after which he departs "whither--into what other dreams, none can tell."
 		</p>
@@ -113,23 +113,24 @@
 	</div>
 	<div class="konferencja">
 		<div class="plan">
-			plan konferencji
+			Plan konferencji
 		</div>	
 			<div class="konf-plan-menu">
 				<div class="plan-item plan-item-1">dzień pierwszy<br>5 października
 					<div class="plan-day1">
-						<h3>5 października, piątek</h3>
-
 						<table>
 								<tr>
+									<td class="day-info" colspan="4">5 października, piątek</td>
+								</tr>								
+								<tr>
 									<td class="table-heading">Godziny</td>
-									<td class="table-heading">Wydarzenie</td>
+									<td class="table-heading"  colspan="3">Wydarzenie</td>
 								</tr>
 								<tr>
 									<td class="hour">
 										11.30 - 13.00
 									</td>
-									<td>
+									<td colspan="3">
 										200 lat polszczyzny<br>
 										<span class="venue">Panel IJP. Sala kolumnowa, Instytut Historii</span>
 									</td>
@@ -138,7 +139,7 @@
 									<td class="hour">
 										13.00 - 14.00
 									</td>
-									<td>
+									<td colspan="3">
 										Przerwa obiadowa<br>
 										<span class="venue">Pałac Kazimierzowski</span>
 									</td>
@@ -147,7 +148,7 @@
 									<td class="hour">
 										14.00 - 16.00
 									</td>
-									<td>
+									<td colspan="4">
 										Ślady na piasku i kręgi na wodzie.<br><span class="nobold">Nowoczesne literaturoznawstwo warszawskie: memorabilia (zapamiętane – zapomniane – odpamiętniane)</span>
 										<br><span class="venue">Panel ILP. Pałac Kazimierzowski</span>
 									</td>
@@ -156,13 +157,11 @@
 									<td class="hour">
 										16.00 - 16.30
 									</td>
-									<td>
+									<td  class="no-right-border">
 										Przerwa kawowa<br>
 										<span class="venue">Pałac Kazimierzowski</span>
 									</td>
-								</tr>
-								<tr>
-									<td class="hour">
+									<td class="hour alt-left-border">
 										16.00 - 16.30
 									</td>
 									<td>
@@ -174,13 +173,11 @@
 									<td class="hour">
 										16.30 - 18.00
 									</td>
-									<td>
+									<td class="no-right-border">
 										Warszawskie historie literatury polskiej<br>
 										<span class="venue">Panel ILP. Pałac Kazimierzowski</span>
 									</td>
-								</tr>
-								<tr>
-									<td class="hour">
+									<td class="hour alt-left-border">
 										16.30 - 19.00
 									</td>
 									<td>
@@ -193,136 +190,22 @@
 									<td class="hour">
 										19.00 - 21.00
 									</td>
-									<td>
+									<td colspan="3">
 										Koncert, kolacja
 									</td>
 								</tr>
 
 							</table>
-<!--<br>
-<br>
-						<table>
-								<tr>
-									<td colspan="2" class="table-heading">Instytut Literatury Polskiej</td>
-									<td colspan="2" class="table-heading">Instytut Kultury Polskiej</td>
-								</tr>
-								<tr>
-									<td class="hour">
-										11.30 - 13.00
-									</td>
-									<td colspan ="3">
-										200 lat polszczyzny
-									</td>
-								</tr>
-								<tr>
-									<td class="hour">
-										13.00 - 14.00
-									</td>
-									<td>
-										Przerwa obiadowa
-									</td>
-									<td colspan="2">
-									</td>
-								</tr>
-								<tr>
-									<td class="hour">
-										14.00 - 16.00
-									</td>
-									<td>
-										Ślady na piasku i kręgi na wodzie<br>Nowoczesne literaturoznawstwo warszawskie: <br>memorabilia (zapamiętane – zapomniane – odpamiętniane)
-									</td>
-									<td colspan="2">
-									</td>
-								</tr>
-								<tr>
-									<td class="hour">
-										16.00 - 16.30
-									</td>
-									<td>
-										Przerwa kawowa
-									</td>
-									<td class="hour">
-										16.00 - 16.30
-									</td>
-									<td>
-										Wernisaż wystawy IKP
-									</td>
-								</tr>
-								<tr>
-									<td class="hour">
-										16.30 - 18.00
-									</td>
-									<td>
-										Warszawskie historie literatury polskiej
-									</td>
-									<td class="hour">
-										16.30 - 19.00
-									</td>
-									<td>
-										Współczesna kultura polska jako wyzwanie dla humanistyki
-									</td>
-								</tr>
-
-								<tr>
-									<td class="hour">
-										19.00 - 21.00
-									</td>
-									<td colspan ="3">
-										Koncert, kolacja
-									</td>
-								</tr>
-
-							</table>
--->
 					</div>
 				</div>
 				<div class="plan-item plan-item-2">dzień drugi<br>6 października
 					<div class="plan-day2">
-						<h3> Dzień drugi - 6 października</h3>
-						<table>
-								<tr>
-									<td colspan="2">Instytut Literatury Polskiej</td>
-									<td colspan="2">Instytut Języka Polskiego</td>
-								</tr>
-								<tr>
-									<td class="hour">
-										09.30 - 11.30
-									</td>
-									<td>
-										Literatura polska dziś? – co z nią robić
-									</td>
-									<td class="hour">
-										09.30 - 11.30
-									</td>
-									<td>
-										Język wśród ludzi
-									</td>
-								</tr>
-								<tr>
-									<td class="hour">
-										11.30 - 12.30
-									</td>
-									<td colspan="3">
-										brunch
-									</td>
-								</tr>
-								<tr>
-									<td class="hour">
-										12.30 - 14.30
-									</td>
-									<td colspan="3">
-										Wyzwania nowoczesnej dydaktyki polonistycznej i kulturoznawczej
-									</td>
-								</tr>
-								<tr>
-									<td class="hour">
-										14.30 - 15.00
-									</td>
-									<td colspan="3">
-										Podsumowanie, zamnięcie konferencji
-									</td>
-								</tr>
-							</table>
+<!--tu Przemek wstawia tabelę drugiego dnia -->
+<!--tu Przemek wstawia tabelę drugiego dnia -->
+<!--tu Przemek wstawia tabelę drugiego dnia -->
+<!--tu Przemek wstawia tabelę drugiego dnia -->
+<!--tu Przemek wstawia tabelę drugiego dnia -->
+<!--tu Przemek wstawia tabelę drugiego dnia -->
 					</div>
 				</div>
 				<div class="plan-item plan-download">pobierz plan konferencji</div>
@@ -338,13 +221,14 @@
 		<div class="extra-events">Imprezy towarzyszące
 		</div>
 	</div>
+	
 	<div class="container tlo-2">
 	</div>
 	<div class="panel">
 		<h3>Panel zorganizowany przez Instytut Kultury Polskiej (IKP)</h3>
 	</div>
 
-	<div class="container tlo-3">
+	<div class="container">
 	</div>
 	<div class="info">
 		<p>informacje o wydziale</p>
