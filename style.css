@@ -2431,7 +2431,7 @@ display: none;
 
 .container {
     width: calc(100vw - 17px);
-    height: 100vh !important;
+    height: 100vh;
     left: 0px;
     right: 0px;
     margin: 0px 0px;
@@ -2441,11 +2441,6 @@ display: none;
 .tlo-1 {
 	background-image: url(img/unilar2.jpg);
 	position: relative;
-}
-
-.panels-details {
-	height: 100vh;
-	background-color: green;
 }
 
 .tlo-3 {
@@ -2557,7 +2552,7 @@ display: none;
 	cursor: pointer;
 }
 
-.plan-day1 table, plan-day2 table {
+.plan-day1 table, .plan-day2 table {
 	border-collapse: collapse;
 	width: 80vw;
 	margin-left: 5vw;
@@ -2631,7 +2626,7 @@ display: none;
 	justify-content: center;
 }
 
-.welcome h1 {
+h1 {
 	text-align: center;
 	font-size: 40px;
 	padding-top: 20px;
@@ -2676,10 +2671,103 @@ display: none;
 }
 
 .motto-credit, .motto-credit i {
+	margin-top: 6px;
 	font-size: 14px;
 	line-height: 14px;
 	text-align: right;
 	font-weight: bold;
 	letter-spacing: 1px;
 	color: rgba(230, 126, 34,1.0);
+}
+
+.panels-details {
+	padding-top: 4vh;
+	min-height: 100vh;
+	background: white;
+}
+
+.event {
+	margin-left: 10vw;
+	margin-top: 5vh;
+	width: 80vw;
+	height: 20vh;
+	display: flex;
+	display: webkit-flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.event:hover {
+	cursor: pointer;
+}
+
+.moderator-photo {
+	width: 15vh !important;
+	height: 15vh;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+
+.moderator-photo img {
+	height: 15vh;
+}
+
+.event-chronotop {
+	width: 15vw;
+	height: 15vh;
+	padding-left: 0vw;
+	display: flex;
+	display: webkit-flex;
+	flex-direction: column;
+	align-content: left;
+	justify-content: center;
+}
+
+.event-chronotop p {
+	margin: 0 0;
+	font-size: 12px;
+	line-height: 22px;
+	align-self: left;
+	color: grey;
+	font-weight: bold;
+}
+
+.event-full-description {
+	position: relative;
+	top: 2vh;
+	margin-left: 10vw;
+	padding-left: 15vw;
+	padding-right: 5vw;
+	padding-bottom: 3vh;
+	width: 80vw;
+	text-align: justify;
+	display: none;
+}
+
+.event-border {
+	border-bottom: 2px solid rgba(230, 126, 34,1.0);
+	margin-left: 10vw;
+	margin-right: 10vw;
+	width: 80vw;
+}
+
+.event-full-description p {
+	margin-top: 0;
+}
+
+.event-lead {
+	padding-left: 10px;
+}
+
+.event-lead-name {
+	font-weight: bold;
+	padding-bottom: 0.5vh;
+}
+
+.event-lead-title {
+	font-size: 26px;
+	font-weight: bold;
+	color:rgba(230, 126, 34,1.0);
 }

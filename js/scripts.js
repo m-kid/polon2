@@ -225,3 +225,9 @@ $(".plan-item-1").click(function(){
         scrollTop: $(".konferencja").offset().top
         }, 2000);
        });
+
+
+       $("#200_lead").click(function(){
+       $("#200_desc").slideToggle("slow");    
+
+});
