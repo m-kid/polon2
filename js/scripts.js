@@ -226,8 +226,14 @@ $(".plan-item-1").click(function(){
         }, 2000);
        });
 
+        $(".panels").click(function(){
+        $("html, body").animate({
+        scrollTop: $(".panels-details").offset().top
+        }, 2000);
+       });
 
-       $("#200_lead").click(function(){
-       $("#200_desc").slideToggle("slow");    
+
+       $(".event").click(function(){
+       $(this).next(".event-full-description").slideToggle("slow");    
 
 });
