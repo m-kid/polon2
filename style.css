@@ -2762,6 +2762,7 @@ h1 {
 
 .event-full-description p {
 	margin-top: 0;
+	line-height: 26px;
 }
 
 .event-lead {
@@ -2779,4 +2780,12 @@ h1 {
 	letter-spacing: 1px;
 	font-weight: bold;
 	color:rgba(230, 126, 34,1.0);
+}
+
+.event-title-secondpart {
+	font-size: 16px;
+	letter-spacing: none;
+	line-height: 18px;
+	margin: 0 0;
+	padding: 0 0;
 }

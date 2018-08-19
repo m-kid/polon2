@@ -235,5 +235,4 @@ $(".plan-item-1").click(function(){
 
        $(".event").click(function(){
        $(this).next(".event-full-description").slideToggle("slow");    
-
-});
+        });
